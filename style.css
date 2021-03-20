@@ -2,9 +2,13 @@ body {
 	background-color: #212121
 } 
 
-.div {
+#div1 {
 	font-family: "Courier New", Courier, monospace;
 	text-align: center;
 	color: white
-	
+}
+
+#tpc1 {
+	background-color: #1db954
+
 }
