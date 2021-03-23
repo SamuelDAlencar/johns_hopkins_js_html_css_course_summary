@@ -1,2 +1,2 @@
-# week_1_repository
+# lectures_repository
 week 1's lectures summary
