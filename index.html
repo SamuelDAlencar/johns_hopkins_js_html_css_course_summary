@@ -9,7 +9,7 @@
 	<header>
 		"header":This is the header of the site
 		<nav>"nav": Tag for navigation through the page (this tag is inside the header)</nav>
-	</header>
+	</header><br><br><br>
 
 	<br><br><h1>Lecture's Summary: Week 1</h1><br><br>
 
@@ -49,21 +49,19 @@
 
 		<p>Yet inside the link subject of the lecture, we can add a DIV element inside the "a" tag, so that we can click in a whole area, a whole block, like a company logo, and get to the specified link, example: <a href="same_dir_html_file.html" title="Here's the subject inside the atribute called title"><div>That's a block, that has an whole clickable area to get to the added link (can be edited and modified for a bigger range using css)</div></a></p>
 
-		<p>To implemnt images to the page, we use the tag "img", and we can add images from the same directory where the index file came from, and also from the web, here's an example of a file from the same directory as the HTML file:</p> <img src="Me 12.jpg" width="500px"><br><br>
-
-		<p>Now here's the example of a file from the web:</p> <img src="https://fsa.zobj.net/crop.php?r=Q-LTz3DOITEn4h_Yrk-f2YsxoDp8Y1lmHAvHRQT-82ZokYtzfp-VZTLCALnZa3L3NhcVxWlq3d0UvcPGh292zNHzZ-6ke6Hw8eogs43XibHxij49DTYVyvl6AJP_oi3puS10sIWvHlLyZ5Xr" width="500px"><br><br>
+		<p>To implemnt images to the page, we use the tag "img", and we can add images from the same directory where the index file came from, and also from the web. <br><br><br><p id="me_block">Here's an example of a file from the same directory as the HTML file: <img id="me" src="Me 12.jpg" width="500px"></p> <p id="levi_block">Now here's the example of a file from the web: <img id="levi" src="https://fsa.zobj.net/crop.php?r=Q-LTz3DOITEn4h_Yrk-f2YsxoDp8Y1lmHAvHRQT-82ZokYtzfp-VZTLCALnZa3L3NhcVxWlq3d0UvcPGh292zNHzZ-6ke6Hw8eogs43XibHxij49DTYVyvl6AJP_oi3puS10sIWvHlLyZ5Xr" width="380px"></p></p><br><br><br>
 
 		<p>We can create a part of the web page to help the client navigate through the sections and content displayed on the page, there'll be a whole large example in latim about this at the end of the page, use this section to get there and test the functionality:</p>
 	</section>
 
 	<section>
-    	<ul>
+    	<ol>
       		<li><a href="#section1">#section1</a></li>
       		<li><a href="#section2">#section2</a></li>
       		<li><a href="#section3">#section3</a></li>
       		<li><a href="#section4">#section4</a></li>
       		<li><a href="#section5">#section5</a></li>
-    	</ul>
+    	</ol>
 	</section>
   
 	<section id="section1">
@@ -89,9 +87,9 @@
     	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur libero, a voluptate, quasi rem id! Mollitia nostrum quo in dolorum magnam assumenda, architecto odio expedita atque unde, laudantium velit. Et ipsa veritatis voluptatem repellendus consequatur enim asperiores est accusamus cumque dolore sit quae ipsum quas eveniet omnis, fuga temporibus cum doloremque. Eum ab, error facere vero temporibus dignissimos earum cum. Distinctio fuga sit magni commodi illo doloremque, dolor quisquam dolorem saepe fugiat quas voluptates et omnis a iusto ratione quibusdam molestiae voluptate nulla qui id cumque vitae. Quibusdam provident officia obcaecati accusamus facilis quisquam harum nostrum blanditiis ullam? Quo velit rem, quam, quasi quibusdam placeat. Numquam, unde adipisci quas maiores nostrum accusamus id? Odio aut quisquam nulla. Veniam nostrum dolorum blanditiis officiis, aspernatur. Ex hic veritatis, magnam quis accusantium eveniet nemo harum nam facere dolor quam dolorem asperiores quas sequi minima quisquam culpa eos assumenda. Accusamus debitis nesciunt dolores similique incidunt adipisci eaque sapiente ipsa natus, explicabo eligendi commodi cumque porro quas sint sequi quaerat, non repellat quia quibusdam vitae cum quis aliquam, voluptates consequatur. Aperiam delectus tempore, quasi aspernatur ex libero nemo nihil hic exercitationem magni labore minus expedita porro et praesentium suscipit fugit nulla deleniti perferendis eum eligendi voluptas sequi voluptates. Error et unde quae, assumenda accusamus vitae ea quasi, facilis rem illo maiores maxime eaque, perferendis dolorem blanditiis hic iste. Asperiores voluptate, laudantium aliquid itaque! Dignissimos aspernatur quisquam nostrum tempora ducimus tempore dolor magni ad libero, omnis obcaecati, deleniti accusantium enim harum, inventore quod eum! Quasi facere vitae ipsam eveniet, praesentium vel fugiat id expedita a totam, facilis harum voluptatum ex inventore excepturi molestiae tempora non, quia ab commodi, dolore? Non ipsum in quo impedit repudiandae pariatur, itaque id quam, esse eligendi accusantium et, quidem sequi quia voluptas nostrum, excepturi facere recusandae nihil. Cum, nisi sint exercitationem?</p>
   	</section>
 
-  	<br><h1>Lecture's Summary: Week 2</h1><br>
+  	<br><h1>Lecture's Summary: Week 2</h1><br><br>
 
-  	<p>Anatomy of a CSS rule: consists of: 
+  	<p>Anatomy of a css rule: consists of: 
   		<ol>
   			<li>Selector: "p", "h1", "ul", "footer"</li>
   			<li>Property: "color", "font-style", "font-size"</li>
@@ -101,11 +99,17 @@
 
   		<p>Everything together makes a "Stylesheet"</p>
 
-  		<p></p>
+  		<p>Here are three Selectors we can use in to modify elements with css:
+  			<ul>
+  				<li>element Selector: ("p", "h1", "section") affects all elements (that specific selected one)</li>
+  				<li>class Selector (class=""): affects only the element attributed with that especific class Selector (uses "." to define it)</li>
+  				<li>id Selector (id=""): affects only the element attributed with that especific id Selector (uses "#" to define it)</li>
+  			</ul>
+  		</p>
   			
   	</p>
 
-	<footer>
+	<br><br><br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
 	</footer>
 </body>
