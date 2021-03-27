@@ -24,3 +24,14 @@ p, header, section, li, ul, ol, aside, footer {
 header, footer {
 	text-align: center;
 }
+
+a:link, a:visited {
+	text-decoration: none;
+	background-color: #1db954;
+	border: 1px solid grey;
+	color: black;
+}
+
+a:hover, a:active {
+	background-color: red
+}
