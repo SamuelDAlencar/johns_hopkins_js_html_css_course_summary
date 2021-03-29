@@ -11,6 +11,8 @@
 		<nav>"nav": Tag for navigation through the page (this tag is inside the header)</nav>
 	</header><br><br><br>
 
+	<hr>
+
 	<br><br><h1>Lecture's Summary: Week 1</h1><br><br>
 
 	<section>
@@ -36,6 +38,8 @@
 		"aside": Aside topics about the subject
 	</aside>
 
+	<br><br>
+
 	<section>
 		<ul>
 			<li><p>Since we can't use the bigger and less symbols, and "&" cause they conflict with the semantic of HTML, we use the tags "&lt" and "&gt", and "&amp", adding a ";" at the end, here's an example: "5 is &gp; then 3, &amp; 3 is &lt; 5"</p></li>
@@ -50,9 +54,13 @@
 
 			<li><p>Yet inside the link subject of the lecture, we can add a DIV element inside the "a" tag, so that we can click in a whole area, a whole block, like a company logo, and get to the specified link, example: <a href="same_dir_html_file.html" title="Here's the subject inside the atribute called title"><div>That's a block, that has an whole clickable area to get to the added link (can be edited and modified for a bigger range using css)</div></a></p></li>
 
+			<hr>
+
 			<li><p>To implemnt images to the page, we use the tag "img", and we can add images from the same directory where the index file came from, and also from the web. <br><br><br><p id="me_block">Here's an example of a file from the same directory as the HTML file: <img id="me" src="Me 12.jpg" width="500px"></p> <p id="levi_block">Now here's the example of a file from the web: <img id="levi" src="https://fsa.zobj.net/crop.php?r=Q-LTz3DOITEn4h_Yrk-f2YsxoDp8Y1lmHAvHRQT-82ZokYtzfp-VZTLCALnZa3L3NhcVxWlq3d0UvcPGh292zNHzZ-6ke6Hw8eogs43XibHxij49DTYVyvl6AJP_oi3puS10sIWvHlLyZ5Xr" width="380px"></p></p></li><br><br><br>
 
-			<li><p>We can create a part of the web page to help the client navigate through the sections and content displayed on the page, there'll be a whole large example in latim about this at the end of the page, use this section to get there and test the functionality:</p></li>
+			<hr>
+
+			<br><li><p>We can create a part of the web page to help the client navigate through the sections and content displayed on the page, there'll be a whole large example in latim about this at the end of the page, use this section to get there and test the functionality:</p></li>
 		</ul>
 	</section>
 
@@ -115,21 +123,49 @@
 
   		<p>Descendent Selector: still with the same principle as the child selector, we can use the same relation, but without having to be a direct child to work, by just removing the ">", example: "article p {}" in this example, "p" is gonna be affected even if it is not a direct child to "article"</p>
   			
-  	</p>
+  	</p><br>
 
-  	<p>Pseudo-classes: they allow us to change the style of elements depending on it's state or action made on it, for example, if I want to change the style of a link when I hover it, or click it, we use "a:hover {}", like here: <a id="linkedin"href="https://www.linkedin.com/in/samuel-de-alencar-972896203/" title="My Linkedin" target="_blank">My Linkedin</a>. The "nth-child()" allows us to target an specific child from the element we're changing, for example, if there's 3 links in a header, we can target the second one by using "header:nth-child(2) {}". We can also combine pseudo-selectors, like when we want to target the action of an especific link, we would use: "header:nth-child(2):hover {}"</p>
+  	<p>Pseudo-classes: they allow us to change the style of elements depending on it's state or action made on it, for example, if I want to change the style of a link when I hover it, or click it, we use "a:hover {}", like here: <a id="linkedin"href="https://www.linkedin.com/in/samuel-de-alencar-972896203/" title="My Linkedin" target="_blank">My Linkedin</a>. The "nth-child()" allows us to target an specific child from the element we're changing, for example, if there's 3 links in a header, we can target the second one by using "header:nth-child(2) {}". We can also combine pseudo-selectors, like when we want to target the action of an especific link, we would use: "header:nth-child(2):hover {}"</p><br>
 
   	<p>We can specify styles for our HTML page in three ways:
 		<ul>
-			<li>Adding a style atribute to the element (style="")</li>
+			<li>Adding a style atribute to the element, a in-line styling (style="")</li>
 			<li>Adding the "style" section to the head of your HTML page ("&lt;style&gt; &lt;/style&gt;")</li>
 			<li>Creating an external CSS file, and linkin it to your HTML page (&lt;link rel="stylesheet" type="text/css" href=" "&gt;)</li>
 		</ul> 
 
-  	</p>
+  	</p><br>
+
+  	<p>Since we have multiple ways to implement CSS into our web page, there may be some conflicts on the way, so to avoid those conflicts, we should consider some rules:
+
+  		<ol><li>Origin precedence (when not confllict).</li>
+  			<ul>
+  				<li>Last declaration wins: Remember, HTML is processed sequentially, top to bottom, and for precedence, think of external CSS as declared at the spot where it's linked to.</li>
+  				<li>Declarations Merge</li>
+  			</ul>
+  			<li>Inheritance</li>
+  			<ul>
+  				<li>DOM Tree: if we specify a property directly in a parent element, without specifying on a specific child of that parent, that child, and every element bellow that parent, will be affected by that property, for exemple, if we only specify "background-color: red;" in the body part, every last part of the web page will have a red background color, unless we specify a background color for an specific child of that parent.</li>
+  			</ul>
+  			<li>Specificity</li>
+  			<ul>
+  				<li>Most specific Selector Combination Wins: to help us identify wich ones are more specific than the other, we can use a simple technique: the most specific and direct you are in a selector, ahead that selector will be from other selectors that has to many atributes and not so targeting, example: "body h2 {color: green;}" it's not that specific and targeted than that example, that's directly changed in the element, and also has an ID: "&lt;h2 id="h2color" style="color: blue;"&gt;", so that h2 is going to be blue</li>
+  			</ul>
+  		</ol>
+  	</p><br><br>
+
+  	<ul><li>There are 2 units of measure for fonts, that are relative, Percent, and ems.</li>
+  		<ul>
+  			<li>Percent: when we specify our font size using percentage, it makes the text fit the percentage we specified, according to the web browser's default sizing</li>
+  			<li>ems: This measure multiplies the default size of your element, but if you change the size of a div for example, using css, and make it 120%, if this element has any childs, and we make it 2em, it's size will be tiwce the before size, wich was 120%, for example:</li><br>
+  				<div style="font-size: 2em">This text is 40px large, because my preset size was 20px and now i made it 2em <br><br><div style="font-size: .5em">We can also lower its size using ems, just by adding a "." before it, for example, this text, but since that text is a child of the text i just magnified, to lower it by 2ems, i have to use ".5em", because if i use 2em, i'll only return it's size to my regular 20px since that text is a parent, and is already 2em, affecting it's childs. So, here is an example of a text lowered 2ems (without previous magnifying)</div></div><br> <div style="font-size: .4em">This text is .4ems (from 20px)</div>
+  		</ul>
+  	</ul>
+
+  	<hr>
 
 	<br><br><br><footer>
-		"footer": usually, here goes the copyright section (&copy;), support, etc
+		"footer": usually, here goes the copyright section (&copy;), support, etc.
 	</footer>
 </body>
 

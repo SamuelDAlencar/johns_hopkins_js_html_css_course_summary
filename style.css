@@ -10,7 +10,9 @@ h1 {
 }
 
 h1, h2, h3, img {
-	box-shadow: 2px 2px #1db954;
+	border-top: dotted;
+	border-left: initial;
+	box-shadow: 4px 4px #1db954;
 	color: #1db954;
 }
 
@@ -33,5 +35,5 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-	background-color: red
+	background-color: blue
 }
