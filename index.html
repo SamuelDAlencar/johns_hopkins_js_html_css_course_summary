@@ -207,6 +207,42 @@
 
   	<hr>
 
+	<p>Box Models: talking about box models, we can use a feel examples, now, here's a div with some random content, inside another div</p>
+
+	<div id="box1">
+		<div id="content1">
+			That's the box
+		</div>
+	</div>
+
+	<p>If we take a closer look, we can see that there's a small gap between both sides of the div, so to understand what's going on, we open Inspect Element, and what we see is 4 parts of our HTML page body, a margin, a border, a padding and the content, but remember, that depends on the browser and it's default settings</p> 
+
+	<p>Now we're gonna add the padding and margin to our div, and change it's atributes</p>	
+
+	<div id="box2">
+		<div id="content2">
+			That's the box
+		</div>
+	</div>
+
+	<p>By default, the box sizing is set to content box, so when we specify its height and width, we're specifiyng the content's height and width, not the entire thing. There's also a way to specify the box size, by using "box-sizing", so then we can use the border's size, or the content's size. But all of the modern frameworks, like bootstrap, uses border-box as it's sizing model</p>
+
+	<p>The "*" element, selects every single element of the page, and applies the properties you define to it</p>
+
+	<p>Cumulative Margins: imagine that we have two boxes, side by side, and the left box's margin is 40px, and the right one is 50px, the total margin between those two boxes is gonna be 90px, because they're comulative, but what happens if we have a element on top of other element, two divs, and each one specifies a margin, for example 30px and 20px, in that case, it's total margin's gonna be 30px, cause in that case, it is not comulative, in that case the biggest margin will be set</p>
+
+	<p>When we specify sizes for our content inside the box, but we exceed it's size, and it ends up getting a overflow, like this:</p>
+
+	<div id="box3">
+		<div id="content3">
+			Evangelion is set fifteen years after a worldwide cataclysm, particularly in the futuristic fortified city of Tokyo-3. The protagonist is Shinji, a teenage boy who was recruited by his father Gendo to the shadowy organization Nerv to pilot a giant bio-machine mecha named "Evangelion" into combat against beings called "Angels"
+		</div>
+	</div>
+
+	<p>That's the overflow, so to fix this, we can use some overflow options, for example "overflow: auto;", wich will ad scroll bars when needed, so we can scroll and keep reading the content</p><br>
+
+	<p>We can specify a background image</p>
+
 	<br><br><br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
 	</footer>

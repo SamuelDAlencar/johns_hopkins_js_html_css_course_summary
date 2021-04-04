@@ -50,3 +50,35 @@ a:hover, a:active {
 	margin-left: 30px;
 	clear: both;
 }
+
+#box1 {
+	background-color: #1db954;
+}
+
+#box2 {
+	background-color: blue;
+	padding: 10px 10px 10px 10px;
+	margin: 40px;
+	border: 20px solid black;
+	width: 300px
+	box-sizing: border-box;
+}
+
+#content2 {
+	background-color: #1db954;
+}
+
+#box3 {
+	background-color: blue;
+	padding: 10px 10px 10px 10px;
+	margin: 40px;
+	border: 20px solid red;
+	width: 300px
+	box-sizing: border-box;
+}
+
+#content3 {
+	background-color: #1db954;
+	height: 30px;
+	overflow: auto;
+}
