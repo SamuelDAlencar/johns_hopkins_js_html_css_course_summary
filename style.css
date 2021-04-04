@@ -82,3 +82,16 @@ a:hover, a:active {
 	height: 30px;
 	overflow: auto;
 }
+
+#snk {
+	border-color: black;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	color: black; 
+	font-family: serif;
+	font-style: italic;
+	font-size: 20px;
+	width: 1000px;
+	height: 780px;
+	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center #1db954;
+}
