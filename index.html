@@ -243,7 +243,7 @@
 
 	<p>We can specify a background image by using the css tag "background-image: url ("")", for example:</p><br>
 
-	<div id="snk">Durante um evento na Cambridge Union Society, em novembro de 2018, Zizek disse que o trabalho de Peterson era pseudocientífico, classificou-o como seu inimigo e criticou as visões de Peterson quando ao marxismo cultural. Peterson disse que poderia encontrá-lo "a qualquer hora e em qualquer lugar" para debater e então o encontro foi anunciado para o dia 28 de fevereiro de 2019, posteriormente mudado para o dia 19 de abril.</div><br>
+	<div id="jdp">Durante um evento na Cambridge Union Society, em novembro de 2018, Zizek disse que o trabalho de Peterson era pseudocientífico, classificou-o como seu inimigo e criticou as visões de Peterson quando ao marxismo cultural. Peterson disse que poderia encontrá-lo "a qualquer hora e em qualquer lugar" para debater e então o encontro foi anunciado para o dia 28 de fevereiro de 2019, posteriormente mudado para o dia 19 de abril.</div><br>
 
 	<p>When we specify a size for the image, but it's too large, the image will repeat it self inside the box, so to avoid this we can use the atribute "background-repeat: no-repeat;", or if we want to specify the side, we use "background-repeat: repeat-x;"</p>
 
@@ -280,6 +280,38 @@
 	</div><br>
 
 	<p>We can also use "clear-both" to clear both sides, and correct any conflicts</p>
+
+	<hr>
+
+	<p>To create two columns, we can use the "float" property, but with some changes, for example, to create two columns, we can float one of them to the left, and the other to the right, but to make it responsive to the size of the client's screen, and make it stick with the two columns layout even when we change the browser's size, we can set the size of our elements using "%" instead of "px", for example:</p>
+
+	<div id="anime">
+		<p id="snk">Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin, lit. "The Attack Titan") is a Japanese manga series written and illustrated by Hajime Isayama. It is set in a world where humanity lives inside cities surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown and the death of his mother. Attack on Titan has been serialized in Kodansha's monthly Bessatsu Shōnen Magazine since September 2009 and collected into 33 tankōbon volumes as of January 2021.</p>
+		<p id="eva">Evangelion is set fifteen years after a worldwide cataclysm, particularly in the futuristic fortified city of Tokyo-3. The protagonist is Shinji, a teenage boy who was recruited by his father Gendo to the shadowy organization Nerv to pilot a giant bio-machine mecha named "Evangelion" into combat against beings called "Angels". The series explores the experiences and emotions of Evangelion pilots and members of Nerv as they try to prevent Angels from causing more cataclysms. In the process, they are called upon to understand the ultimate causes of events and the motives for human action.</p>
+	</div><br><br>
+
+	<p>Using "%", and "float", we made two responsive columns</p>
+
+	<hr>
+
+	<p>Relative and Absolute Element Positioning</p>
+
+	<ul>
+		<li>Static Positioning
+			<ul>
+				<li>Normal document flow</li>
+				<li>Default for all, except HTML</li>
+			</ul>
+		</li>
+
+		<li>Relative Positioning
+			<ul>
+				<li>Element is positioned relative to its position in normal document flow</li>
+				<li>Positioning CSS (offset) properties are: top, bottom, left, right</li>
+				<li>Element is NOT taken out of normal document flow, and even if it is moved, its original is preserved</li>
+			</ul>
+		</li>
+	</ul>
 
 	<br><br><br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc

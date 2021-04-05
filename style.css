@@ -83,7 +83,7 @@ a:hover, a:active {
 	overflow: auto;
 }
 
-#snk {
+#jdp {
 	border-color: black;
 	padding: 10px 10px 10px 10px;
 	text-align: center;
@@ -213,6 +213,29 @@ a:hover, a:active {
 	color: black;
 	clear: left;
 }
+
+#snk {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #1db954;
+	color: black;
+	margin-bottom: 10px;
+}
+
+#eva {
+	box-sizing: border-box;
+	width: 50%;
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #1db954;
+	color: black;
+	margin-bottom: 100px;
+}
+
 
 
 
