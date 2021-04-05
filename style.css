@@ -95,3 +95,124 @@ a:hover, a:active {
 	height: 780px;
 	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center #1db954;
 }
+
+#pbox {
+  background-color: #1db954;
+}
+
+#p1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  float: right;
+}
+#p2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #DEB887;
+}
+#p3 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #5F9EA0;
+}
+#p4 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #FF7F50;
+}
+
+#psection {
+	color: black;
+	clear: left;
+}
+
+#pbox2 {
+  background-color: #1db954;
+}
+
+#p1b {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  float: left;
+  margin: 10px;
+}
+#p2b {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #DEB887;
+  float: left;
+  margin: 10px;
+}
+#p3b {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #5F9EA0;
+  float: left;
+  margin: 10px;
+}
+#p4b {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #FF7F50;
+  float: left;
+  margin: 10px;
+}
+
+#psection2 {
+	color: black;
+}
+
+#pbox3 {
+  background-color: #1db954;
+}
+
+#p1c {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #A52A2A;
+  float: left;
+  margin: 10px;
+}
+#p2c {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #DEB887;
+  float: left;
+  margin: 10px;
+}
+#p3c {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #5F9EA0;
+  float: left;
+  margin: 10px;
+}
+#p4c {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #FF7F50;
+  float: left;
+  margin: 10px;
+}
+
+#psection3 {
+	color: black;
+	clear: left;
+}
+
+
+

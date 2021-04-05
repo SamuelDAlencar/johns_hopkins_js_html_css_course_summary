@@ -247,7 +247,39 @@
 
 	<p>When we specify a size for the image, but it's too large, the image will repeat it self inside the box, so to avoid this we can use the atribute "background-repeat: no-repeat;", or if we want to specify the side, we use "background-repeat: repeat-x;"</p>
 
-	<p>If we want to specify the place of the box that we want the image, we add the position after the url</p>
+	<p>If we want to specify the place of the box that we want the image, we add the position after the url</p><br><br>
+
+	<p>Position elements by floating: the "float" atribute makes an element float all the way to the side that we specify, for example: "#p1 {float-right}". Using this line, we'll make the first paragraph box position itself to the right, like here:</p>
+
+	<div id="pbox">
+  		<p id="p1"></p>
+  		<p id="p2"></p>
+  		<p id="p3"></p>
+  		<p id="p4"></p>
+  		<section id="psection">This is regular content continuing after the the paragraph boxes.</section>
+	</div>
+
+	<p>When we float a element from its regular document flow flow, the other elements placed on that flow will reposition themselves, since we got the first paragraph out from its regular flow. If it happens to colapse, and the text inside the div didn't position it self properly, like this:</p>
+
+	<div id="pbox2">
+  		<p id="p1b"></p>
+  		<p id="p2b"></p>
+  		<p id="p3b"></p>
+  		<p id="p4b"></p>
+  		<section id="psection2">This is regular content continuing after the the paragraph boxes.</section>
+	</div>
+
+	<p>We use the "clear" property, wich tells the browser not to flow any element to the specified side, but since we already floated the paragraphs to the left size, it'll ending up correcting the text's position:</p>
+
+	<div id="pbox3">
+  		<p id="p1c"></p>
+  		<p id="p2c"></p>
+  		<p id="p3c"></p>
+  		<p id="p4c"></p>
+  		<section id="psection3">This is regular content continuing after the the paragraph boxes.</section>
+	</div><br>
+
+	<p>We can also use "clear-both" to clear both sides, and correct any conflicts</p>
 
 	<br><br><br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
