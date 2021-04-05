@@ -315,10 +315,30 @@
 			<ul>
 				<li>All ofsets (top, bottom, left, right) are relative to the position of the nearest ancestor wich has positioning set on it, other than static</li>
 				<li>By default, HTML is the only element that has non-static positioning set on it (relative)</li>
-				<li>Element is taken out of normal document flow s</li>
+				<li>Element is taken out of normal document flow</li>
 			</ul>
 		</li>
 	</ul>
+
+	<p>Now here's examples of absolute positioning, and relative positioning, reutilizing the paragraphs example from before</p>
+
+	<div id="pboxd">
+  		<p id="p1d"></p>
+  		<p id="p2d"></p>
+  		<p id="p3d"></p>
+  		<p id="p4d"></p>
+	</div>
+
+	<p>Here we moved the first paragraph, using pixels to define the distance from the corner wich the box is located. And we also moved the third paragraph, but now, using the absolute positioning, but something happened, because the paragraph is no longer inside the div, in fact, it is all the way up in our browser, and that's because absolute positioning needs a relative or an absolute parent or ancestor, so since the paragraph, so, to fix this, we just have to anchor its ancestor, so that the paragraph has the reference to hold on to, and to to this we can set the div, wich has the paragraph inside it, a relative position, like here:</p>
+
+	<div id="pboxe">
+  		<p id="p1e"></p>
+  		<p id="p2e"></p>
+  		<p id="p3e"></p>
+  		<p id="p4e"></p>
+	</div>
+
+	<hr>
 
 	<br><br><br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
