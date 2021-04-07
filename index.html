@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initianl-scale=1">
 	<title>Lecture's Summary</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -353,7 +355,20 @@
 
 	<p>Responsive Web Site: a Responsive web site is designed to adapt its layout to the viewing environment by using fluid, proportion-based grids, flexible images, and css3 media queries, so that the site's layout adapts to the size of the device, but having in mind that the content verbosity, or its visual delivery may change</p>
 
-	<br><br><br><footer>
+	<p>To make it more easy to understand, lets use the 12 grid layout on the page to make this example, Here we have 8 blocks, and they're all responsive to large and medium sized screens, , using a simple and responsive framework. When the screen gets between 950px and 1199px, it'll change from a four column layout, to a two column layout, and below that, a single column layout responsive to the screen size we set, or the mobile we're using. But for it to work inside mobile phones, we have to use a meta tag called "viewport", and make it's width to be the device's width, and then remove the automatic mobile zooming, and make the page fit the mobile correctly </p>
+
+	<div class="row">
+  		<div class="col-lg-3 col-md-6"><p id="pr1">Item 1</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr2">Item 2</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr3">Item 3</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr4">Item 4</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr5">Item 5</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr6">Item 6</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr7">Item 7</p></div>
+  		<div class="col-lg-3 col-md-6"><p id="pr8">Item 8</p></div>
+	</div>
+
+	<footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
 	</footer>
 </body>
