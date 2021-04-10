@@ -2,9 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initianl-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lecture's Summary</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -368,11 +369,57 @@
   		<div class="col-lg-3 col-md-6"><p id="pr8">Item 8</p></div>
 	</div>
 
+	<p>Bootstrap: bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web</p>
+
+	<ul>but Bootstrap may have some disadvantages:
+		<li>Disadvantages
+			<ul>
+				<li>Too big, too bloated</li>
+				<li>Some features we'll barely use, for example the Selective Download feature</li>
+				<li>You can write your own that's more targeted/smaller, but of course it'll take much more time to write it as well</li>
+			</ul>
+		</li>
+	</ul>
+
+	<p>And since a framework is the skeleton of the text, and we inserted bootstrap in that page (that has already been entirely modified), some parts of the text may not be properly positioned inside the page</p>
+
+	<p>Bootstrap Grid System: These are the components of the grid system</p>
+
+	<ul>
+		<li>class="container": your bootstrap grid must always be inside a container (or container-fluid)</li>
+		<li>class="row" (inside the container)</li>
+		<li>class="col-md-4" (inside the row)</li>
+	</ul>
+
+	<p>Every Bootstrap column class is defined using this template: col-SIZE-SPAN</p>
+
+	<ul>
+		<li>SIZE:
+			<ul>
+				<li>Screen width range identifier</li>
+				<li>Columns will collapse (i.e.,stack) below that width (UNLESS another rule applies</li>
+			</ul>
+		</li>
+
+		<li>SPAN:
+			<ul>
+				<li>How many columns element should span</li>
+				<li>Values: 1 through 12</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
 	<footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
 	</footer>
+
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </body>
 
-<script type="text/javascript" src="script.js"></script>
+
 
 </html>
