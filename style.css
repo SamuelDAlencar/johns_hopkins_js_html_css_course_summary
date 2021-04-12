@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
+
 body {
-	background-color: #212121
+	background-color: black
 }
 
 h1 {
-	color: #1db954;
+	color: #00dd80;
 	text-align: center;
 	font-family: sans-serif;
 	font-style: italic;
@@ -16,15 +17,14 @@ h1 {
 h1, h2, h3, img {
 	border-top: dotted;
 	border-left: initial;
-	box-shadow: 4px 4px #1db954;
-	color: #1db954;
+	box-shadow: 4px 4px #00dd80;
+	color: #00dd80;
 }
 
 p, header, section, li, ul, ol, aside, footer {
-	font-style: italic;
 	color: white;
 	font-size: 20px; 
-	font-family: serif;
+	font-family: sans-serif;
 }
 
 header, footer {
@@ -33,7 +33,7 @@ header, footer {
 
 a:link, a:visited {
 	text-decoration: none;
-	background-color: #1db954;
+	background-color: #00dd80;
 	border: 1px solid grey;
 	color: black;
 }
@@ -94,7 +94,7 @@ a:hover, a:active {
 	color: black; 
 	font-family: serif;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 16px;
 	width: 1000px;
 	height: 780px;
 	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center #1db954;
@@ -431,12 +431,10 @@ a:hover, a:active {
   color: white;
 }
 
-/* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
 
-/********** Large devices only **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -480,7 +478,6 @@ a:hover, a:active {
   }
 }
 
-/********** Medium devices only **********/
 @media (min-width: 950px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -524,4 +521,11 @@ a:hover, a:active {
   }
 }
 
+.row {
+  margin-bottom: 15px;
+}
 
+.row > div {
+  border: 2px solid blue;
+  background-color: #00dd80
+}

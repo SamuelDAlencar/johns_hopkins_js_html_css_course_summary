@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lecture's Summary</title>
 	<link rel="stylesheet" href="bootstrap.min.css">
@@ -387,8 +388,8 @@
 
 	<ul>
 		<li>class="container" (or container fluid, that streches your layout to full width of the browser, and provides consistent padding around your grid, and other content): has predetermined fixed width, but still responsive based on the width of the browser (your bootstrap grid must always be inside a container)</li>
-		<li>class="row" (inside the container)</li>
-		<li>class="col-md-4" (inside the row)</li>
+		<li>class="row" (inside the container): Creates horizontal groups of columns, that can also apply negative left/right margins</li>
+		<li>class="col-md-4" (inside the row): Columns that forms the grid</li>
 	</ul>
 
 	<p>Every Bootstrap column class is defined using this template: col-SIZE-SPAN</p>
@@ -397,7 +398,7 @@
 		<li>SIZE:
 			<ul>
 				<li>Screen width range identifier</li>
-				<li>Columns will collapse (i.e.,stack) below that width (UNLESS another rule applies</li>
+				<li>Columns will collapse (i.e.,stack) below that width, UNLESS another rule applies</li>
 			</ul>
 		</li>
 
@@ -409,7 +410,23 @@
 		</li>
 	</ul>
 
+	<p>Now here's an example of three columns, and how we use bootstrap to organize and choose how we want them to be. When we strech the browser to a certain point, depending on wich grids we want the column to take, it'll change to the size we specified</p>
 
+	<div style= "color: black" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">Column 1</div>
+			<div class="col-md-4 col-sm-6">Column 2</div>
+			<div class="col-md-4 col-sm-6">Column 3</div>
+		</div>
+	</div>
+
+	<div style= "color: black" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">Column 1</div>
+			<div class="col-md-4 col-sm-6">Column 2</div>
+			<div class="col-md-4 col-sm-6">Column 3</div>
+		</div>
+	</div>
 
 	<footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
