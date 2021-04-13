@@ -2,32 +2,63 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #090c10;
+  border: 1px solid #00dd80;
+}
+
 
 body {
-	background-color: black
+	background-color: black;
+  border: 30px solid black;
 }
 
 h1 {
 	color: #00dd80;
 	text-align: center;
-	font-family: sans-serif;
-	font-style: italic;
+	font-family: nunito, sans-serif;
+}
+
+hr {
+  color: ;
+}
+
+#underh1 {
+  position: relative;
+  left: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  background-color: #00dd80;
+  text-align: center;
+  width: 50px; 
+  height: 3px;
+}
+
+.undersections {
+  position: relative;
+  left: 86px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  background-color: #00dd80;
+  text-align: center;
+  width: 50px; 
+  height: 3px;
 }
 
 h1, h2, h3, img {
-	border-top: dotted;
 	border-left: initial;
-	box-shadow: 4px 4px #00dd80;
 	color: #00dd80;
 }
 
-p, header, section, li, ul, ol, aside, footer {
+p, header, section, li, ul, ol, aside {
 	color: white;
 	font-size: 20px; 
-	font-family: sans-serif;
+  font-family: nunito, sans-serif;
 }
 
-header, footer {
+header {
 	text-align: center;
 }
 
@@ -88,16 +119,16 @@ a:hover, a:active {
 }
 
 #jdp {
-	border-color: black;
-	padding: 10px 10px 10px 10px;
-	text-align: center;
-	color: black; 
+	border: 1px solid blue;
+  padding: 10px 10px 10px 10px;
+  text-align: right;
+	color: white; 
 	font-family: serif;
 	font-style: italic;
-	font-size: 16px;
+	font-size: 20px;
 	width: 1000px;
-	height: 780px;
-	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center #1db954;
+	height: 670px;
+	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center;
 }
 
 #pbox {
@@ -264,7 +295,7 @@ a:hover, a:active {
   height: 50px;
   border: 1px solid black;
   background-color: #5F9EA0;
-  position: absolute;
+ /* position: absolute;*/
   top: 0;
   left: 0;
 }
@@ -528,4 +559,13 @@ a:hover, a:active {
 .row > div {
   border: 2px solid blue;
   background-color: #00dd80
+}
+
+footer {
+  background-color: #090c10;
+  text-align: center;
+  color: white;
+  font-size: 20px; 
+  font-family: nunito, sans-serif;
+  border: 1px solid #00dd80;
 }

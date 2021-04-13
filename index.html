@@ -13,11 +13,13 @@
 	<header>
 		"header":This is the header of the site
 		<nav>"nav": Tag for navigation through the page (this tag is inside the header)</nav>
-	</header><br><br><br>
+	</header>
 
-	<hr>
+	<hr style="margin-top: 0px;">
 
-	<br><br><h1>Lecture's Summary: Week 1</h1><br><br>
+	<br><h1>Lecture's Summary: Week 1</h1>
+
+	<p id="underh1"></p>
 
 	<section>
 		<article>"article": Article about the subject, inside a section ("section")</article>
@@ -79,7 +81,8 @@
 	</section><br><br>
   
 	<section id="section1">
-    	<h3>(#section1) Who's Jordan?</h3>
+    	<h3>1 - Who's Jordan?</h3>
+    	<p class="undersections"></p>
     	<p>Jordan Bernt Peterson (born 12 June 1962) is a Canadian professor of psychology at the University of Toronto, a clinical psychologist, and YouTube personality. He began to receive widespread attention in the late 2010s for his conservative views on cultural and political issues.
 
 		Born and raised in Alberta, Peterson obtained bachelor's degrees in political science and psychology from the University of Alberta and a PhD in clinical psychology from McGill University. After teaching and research at Harvard University, he returned to Canada in 1998 to join the faculty of psychology at the University of Toronto. In 1999, he published his first book, Maps of Meaning: The Architecture of Belief, which became the basis for many of his subsequent lectures. The book combined information from psychology, mythology, religion, literature, philosophy, and neuroscience to analyze systems of belief and meaning.
@@ -89,18 +92,29 @@
 		Peterson's lectures and debates—propagated also through podcasts and YouTube—gradually gathered millions of views. He put his clinical practice and teaching duties on hold by 2018, when he published his second book, 12 Rules for Life: An Antidote to Chaos. Promoted with a world tour, it became a bestseller in several countries. In 2021, Peterson published his third book, Beyond Order: 12 More Rules for Life.</p>
   	</section>
 
+  	<hr>
+
   	<section id="section2">
-  		<h3>(#section2) Early life</h3>
+  		<h3>2 - Early life</h3>
+  		<p class="undersections" style="left: 54px;"></p>
     	<p>Peterson was born on 12 June 1962, in Edmonton, Alberta, and grew up in Fairview, a small town in the northwest of the province. He was the eldest of three children born to Walter and Beverley Peterson. Beverley was a librarian at the Fairview campus of Grande Prairie Regional College, and Walter was a school teacher. His middle name is Bernt (/ˈbɛərənt/, BAIR-ənt), after his Norwegian great-grandfather.
 
 		In junior high school, Peterson became friends with Rachel Notley and her family. Notley became leader of the Alberta New Democratic Party and 17th premier of Alberta. Peterson joined the New Democratic Party (NDP) from ages 13 to 18.</p>
   </section>
+
+  <hr>
+
   <section id="section3">
-    	<h3>(#section3) Education</h3>
+    	<h3>3 - Education</h3>
+    	<p class="undersections" style="left: 65px;"></p>
     	<p>After graduating from Fairview High School in 1979, Peterson entered the Grande Prairie Regional College to study political science and English literature, studying to be a corporate lawyer. During this time he read Road to Wigan Pier by George Orwell which significantly affected his educational focus and worldview. He later transferred to the University of Alberta, where he completed his B.A. in political science in 1982. Afterwards, he took a year off to visit Europe, where he began studying the psychological origins of the Cold War; 20th-century European totalitarianism; and the works of Carl Jung, Friedrich Nietzsche, Aleksandr Solzhenitsyn, and Fyodor Dostoevsky. He then returned to the University of Alberta and received a B.A. in psychology in 1984. In 1985, he moved to Montreal to attend McGill University. He earned his Ph.D. in clinical psychology under the supervision of Robert O. Pihl in 1991, and remained as a post-doctoral fellow at McGill's Douglas Hospital until June 1993, working with Pihl and Maurice Dongier. While at McGill University and the Douglas Hospital, he conducted research into familial alcoholism and its associated psychopathologies, such as childhood and adolescent aggression and hyperactive behavior.</p>
   </section>
+
+  <hr>
+
   <section id="section4">
-    	<h2>(#section4) Career</h2>
+    	<h2>4 - Career</h2>
+    	<p class="undersections" style="left: 54px;"></p>
 
     	<img id="jordan2"src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Peterson_Lecture_%2833522701146%29.png/800px-Peterson_Lecture_%2833522701146%29.png" width="300px">
 
@@ -115,10 +129,11 @@
 		Regarding the topic of religion and God, Bret Weinstein moderated a debate between Peterson and Sam Harris at the Orpheum Theatre in Vancouver in June 2018. In July, the two debated the subject again, this time moderated by Douglas Murray, at the 3Arena in Dublin and The O2 Arena in London. In April 2019, Peterson debated Slavoj Žižek at the Sony Centre in Toronto over happiness under capitalism versus Marxism.</p>
   	</section>
 
-  	<section id="section5">
-    	<h2>(#section5) Works</h2>
-    	<h3>Books</h3>
+  	<hr>
 
+  	<section id="section5">
+    	<h2>5 - Works</h2>
+    	<p class="undersections" style="left: 55px;"></p>
     	<img id="book1" src="https://images-na.ssl-images-amazon.com/images/I/41EATHVLJRL._SX324_BO1,204,203,200_.jpg" width="250px">
 
     	<p>Maps of Meaning: The Architecture of Belief (1999)
@@ -142,7 +157,11 @@
 		Peterson's third book, Beyond Order: 12 More Rules for Life, was released on 2 March 2021.[68] On 23 November 2020, his publisher Penguin Random House Canada (PRH Canada) held an internal town hall where many employees criticized the decision to publish the book.[69]</p>
   	</section>
 
-  	<br><h1>Lecture's Summary: Week 2</h1><br><br>
+  	<hr>
+
+  	<h1>Lecture's Summary: Week 2</h1>
+
+  	<p id="underh1"></p>
 
   	<p>Anatomy of a css rule: consists of: 
   		<ol>
@@ -197,7 +216,7 @@
   				<li>Most specific Selector Combination Wins: to help us identify wich ones are more specific than the other, we can use a simple technique: the most specific and direct you are in a selector, ahead that selector will be from other selectors that has to many atributes and not so targeting, example: "body h2 {color: green;}" it's not that specific and targeted than that example, that's directly changed in the element, and also has an ID: "&lt;h2 id="h2color" style="color: blue;"&gt;", so that h2 is going to be blue</li>
   			</ul>
   		</ol>
-  	</p><br><br>
+  	</p><br>
 
   	<ul><li>There are 2 units of measure for fonts, that are relative, Percent, and ems.</li>
   		<ul>
@@ -247,7 +266,7 @@
 
 	<p>We can specify a background image by using the css tag "background-image: url ("")", for example:</p><br>
 
-	<div id="jdp">Durante um evento na Cambridge Union Society, em novembro de 2018, Zizek disse que o trabalho de Peterson era pseudocientífico, classificou-o como seu inimigo e criticou as visões de Peterson quando ao marxismo cultural. Peterson disse que poderia encontrá-lo "a qualquer hora e em qualquer lugar" para debater e então o encontro foi anunciado para o dia 28 de fevereiro de 2019, posteriormente mudado para o dia 19 de abril.</div><br>
+	<div id="jdp" style="background-color: #090c10">Durante um evento na Cambridge Union Society, em novembro de 2018, Zizek disse que o trabalho de Peterson era pseudocientífico, classificou-o como seu inimigo e criticou as visões de Peterson quando ao marxismo cultural. Peterson disse que poderia encontrá-lo "a qualquer hora e em qualquer lugar" para debater e então o encontro foi anunciado para o dia 28 de fevereiro de 2019, posteriormente mudado para o dia 19 de abril.</div><br>
 
 	<p>When we specify a size for the image, but it's too large, the image will repeat it self inside the box, so to avoid this we can use the atribute "background-repeat: no-repeat;", or if we want to specify the side, we use "background-repeat: repeat-x;"</p>
 
@@ -333,7 +352,7 @@
   		<p id="p4d"></p>
 	</div>
 
-	<p>Here we moved the first paragraph, using pixels to define the distance from the corner wich the box is located. And we also moved the third paragraph, but now, using the absolute positioning, but something happened, because the paragraph is no longer inside the div, in fact, it is all the way up in our browser, and that's because absolute positioning needs a relative or an absolute parent or ancestor, so since the paragraph, so, to fix this, we just have to anchor its ancestor, so that the paragraph has the reference to hold on to, and to to this we can set the div, wich has the paragraph inside it, a relative position, like here:</p>
+	<p>Here we moved the first paragraph, using pixels to define the distance from the corner wich the box is located. And we also moved the third paragraph, but now, using the absolute positioning, but something happened, because the paragraph is no longer inside the div, in fact, it is all the way up in our browser (i left the paragraph comented so that it doesn't interfere the look), and that's because absolute positioning needs a relative or an absolute parent or ancestor, so since the paragraph, so, to fix this, we just have to anchor its ancestor, so that the paragraph has the reference to hold on to, and to to this we can set the div, wich has the paragraph inside it, a relative position, like here:</p>
 
 	<div id="pboxe">
   		<p id="p1e"></p>
@@ -426,7 +445,9 @@
 			<div class="col-md-4 col-sm-6">Column 2</div>
 			<div class="col-md-4 col-sm-6">Column 3</div>
 		</div>
-	</div>
+	</div><br>
+
+	<hr style="margin-bottom: 0px;">
 
 	<footer>
 		"footer": usually, here goes the copyright section (&copy;), support, etc
