@@ -75,22 +75,33 @@ a:hover, a:active {
   border-radius: 5px;
 }
 
-#jord {
-  border: 1px solid #00dd80;
-  border-radius: 5px;
-}
-
-#jord_block {
-
-}
-
 #me {
   border: 1px solid #00dd80;
   border-radius: 5px;
+  width: 600px;
 }
 
-#me_block {
 
+#me_block {
+}
+
+#jord {
+  border: 1px solid #00dd80;
+  border-radius: 5px;
+  width: 600px;
+}
+
+#jord_block {
+}
+
+@media (max-width: 768px) {
+  #me {
+    width: 100%;
+  }
+
+  #jord {
+    width: 100%;
+  }
 }
 
 #jordan2 {
@@ -152,7 +163,8 @@ a:hover, a:active {
 	width: 1000px;
 	height: 670px;
 	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom left;
-  background-position: center;
+  background-position: left;
+  background-origin: border-box;
 }
 
 @media (max-width: 1000px) {
