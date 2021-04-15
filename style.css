@@ -144,14 +144,21 @@ a:hover, a:active {
 	border: 1px solid #00dd80;
   border-radius: 15px;
   padding: 10px 10px 10px 10px;
-  text-align: right;
+  text-align: center;
 	color: white; 
 	font-family: serif;
 	font-style: italic;
 	font-size: 20px;
 	width: 1000px;
 	height: 670px;
-	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom center;
+	background: url("https://images.trustinnews.pt/uploads/sites/5/2020/02/GettyImages-1062710576.jpg") no-repeat bottom left;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  #jdp {
+    width: 100%;
+  }
 }
 
 #pbox {
