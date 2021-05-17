@@ -1,1 +1,1 @@
-window.alert("Page's visual compromised since the same page is being used in multiple examples, including Bootstrap")
+// window.alert("Page's visual compromised since the same page is being used in multiple examples, including Bootstrap")
