@@ -636,3 +636,8 @@ footer {
   border: 1px solid #00dd80;
   border-radius: 5px;
 }
+
+#tip {
+  text-decoration: underline;
+  color: #00dd80;
+}
