@@ -641,3 +641,12 @@ footer {
   text-decoration: underline;
   color: #00dd80;
 }
+
+.func-def {
+  line-height: 100px;
+  border: 1px solid #00dd80;
+  border-radius: 15px; 
+  width: 300px;
+  margin: 30px 0 30px 50px;
+  text-align: center;
+}

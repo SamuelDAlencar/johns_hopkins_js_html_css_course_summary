@@ -48,7 +48,7 @@
 
 	<section>
 		<ul>
-			<li><p>Since we can't use the bigger and less symbols, and "&" cause they conflict with the semantic of HTML, we use the tags "&lt" and "&gt", and "&amp", adding a ";" at the end, here's an example: "5 is &gp; then 3, &amp; 3 is &lt; 5"</p></li>
+			<li><p>Since we can't use the bigger and less symbols, and "&" cause they conflict with the semantic of HTML, we use the tags "&lt" and "&gt", and "&amp", adding a ";" at the end, here's an example: "5 is &gt; then 3, &amp; 3 is &lt; 5"</p></li>
 
 			<li><p>To use the copyright symbol, use the tag "& copy (without the space)" and a ";" at the end, to see the example,check the footer of the page</p></li>
 
@@ -469,7 +469,7 @@
 	<h1>!!! Note !!!</h1>
 	<p id="underh1" style="left: 48%"></p>
 
-	<br><p id="end">At this part of the course, we learned how to speak to a real client , figure out what he wants to be implemented, know how to correctly ask the client how he wants things done, so now in week 3 we're going to start creating from 0 a real website for a real client, using Bootstrap 5. There'll be another repository in my account named "johns_hopkins_js_html_css_website_work", or you can just click <a href="https://github.com/SamuelDAlencar/real_restaurant_website_simulation" title="Site's repository" target="_blank" style="font-size: 50px">here</a> and I'll take you there</p>
+	<br><p id="end">&nbsp; At this part of the course, we learned how to speak to a real client , figure out what he wants to be implemented, know how to correctly ask the client how he wants things done, so now in week 3 we're going to start creating from 0 a real website for a real client, using Bootstrap 5. There'll be another repository in my account named "johns_hopkins_js_html_css_website_work", or you can just click <a href="https://github.com/SamuelDAlencar/real_restaurant_website_simulation" title="Site's repository" target="_blank" style="font-size: 50px">here</a> and I'll take you there</p>
 
 	<br><p id="note">(Currently in progress)</p><br><br>
 
@@ -480,9 +480,53 @@
 
 	<p id="tip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
   		<path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-	</svg> Quick tip before getting to the Javascript week: you can open sublime using the terminal, by installing this feature (you can take a look at how we install it <a href="https://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/" target="_blank">here</a>), and after installed, by typing "sublime ." inside the terminal (and "." being the directory you selected inside the terminal, using "cd")</p>
+	</svg>&nbsp; Quick tip before getting to the Javascript week: you can open sublime using the terminal, by installing this feature (you can take a look at how we install it <a href="https://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/" target="_blank">here</a>), and after installed, by typing "sublime ." inside the terminal (and "." being the directory you selected inside the terminal, using "cd")</p>
 
-	<p>&nbsp; To start practicing Javascript, we'll need to make more use of a tool that we saw a lot during this course, but messed up with almost never, wich is the "Console" inside the developer tools</p>
+	<p>&nbsp; This week, we'll need to make more use of a tool that we saw a lot during this course, but messed up with almost never, wich is the "Console" inside the developer tools</p>
+
+	<ul>To begin, first we need to add the script area inside our code, and we can implement javascript inside our code different ways:
+		<li>&nbsp; Using the "script" tag: this is a more simple way and specific way to insert js in our code, wich is made inside our html file, by adding a "&lt;script&gt; &lt;/script&gt;" anywhere inside our code, and simply adding the js lines inside the tag</li>
+
+		<li>&nbsp; Using an external file: it's almost the exact same thing as the first way, but this time we'll use the "src="" " atribute in our tag, and inside it's value space, the directory wich is located our *****.js file</li>
+	</ul>
+
+	<ul>Defining variables, functions and scope:
+		<li>&nbsp; Variables: variable definitions always start with a "var", ex: "var message = "hi" ". When you declare a variable, no types are declared, and same variable can hold different types during the life of the execution</li>
+
+		<li>&nbsp; Functions: functions are defined with the word "function", then the name of the function, parenthesis, and curly braces, like this:
+
+			<div class="func-def">function math () {...}</div>
+
+			<p>A function can also be inside a variable, meaning that the variable's value is a function, for example: </p>
+
+			<div class="func-def">var math = function () {...}</div>
+
+			<p>As you can see, in that case, we don't define a name to the function again, since the function we created is a var, that already has it's name, "math". So, to invoke/execute the function we defined, either you chose to define it by using "function", or by "var function", we type the name/reference of the function, then parenthesis, and then a semicolon, like this:</p>
+
+			<div class="func-def">math();</div>
+
+			<p>We can also pass arguments to our function, wich we insert inside the parenthesis in the function, without using "var". If we want the function to return a value, we use the "Return" keyword, followed by what you want to be returned</p>
+
+			<p>Now, the result of the execution of a function, is stored inside the variable that the function is inside, or the function's name itself.</p>
+
+			<ul>Each function, or variable, lives inside a scope
+				<ul><li>Global scope: variables and functions defined in the global scope, are available everywhere</li></ul>
+				<ul><li>Function (aka Lexical): variables and functions defined in this scope, are availible only within this function</li></ul>
+			</ul><br>
+		</li>
+
+		<p>To understand better the scope subject, we just have to keep in mind that, everything in javascript is executed within a Execution Context, and creating a new function, we are creating a new Execution Context automatically, and that chain proccess, is called Scope Chain</p>
+
+		<ul>Each execution context has:
+			<ul><li>Its own Variable Environment</li></ul>
+			<ul><li>Special "this" object</li></ul>
+			<ul><li>Reference to its Outer Environment</li></ul>
+		</ul><br>
+
+		<p>The global scope does not have an Outer Environment as it's the most outer there is</p>
+
+		<p>Referenced (not defined) variable will be searched for in its current scope first. if not found, the outer reference will be searched. If not found, the outer reference's outer reference will be searched, etc. This will keep going until the global scope. If not found in global scope, the variable is undefined</p>
+	</ul>
 
 	<br><footer>
 		"footer": usually, here goes the copyright section (&copy;), support, adress, service schedule, etc
